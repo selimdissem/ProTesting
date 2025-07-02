@@ -11,6 +11,13 @@ namespace GraphicsLayers
 {
     internal class SnippetsEditOperation
     {
+        /// <summary>
+        /// Moves the selected features in the first feature layer of the active map view by a fixed offset.
+        /// </summary>
+        /// <remarks>This method retrieves the selected features from the first feature layer in the
+        /// active map view  and moves them by a fixed offset of 10 units along both the X and Y axes. If no features
+        /// are  selected, the method performs no action.</remarks>
+        /// <returns></returns>
         internal static async Task MoveFeaturesAsync()
         {
             // Get all of the selected ObjectIDs from the first feature layer in the active mapview.
