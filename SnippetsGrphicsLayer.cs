@@ -13,11 +13,9 @@ using System.Threading.Tasks;
 
 namespace GraphicsLayerExamples
 {
-  class ProSnippet : MapTool
+  class SnippetsGrphicsLayer : MapTool
   {
-        /// <summary>
-        /// This method demonstrates several ways to add a graphics layer to a map, either at the top, bottom, or inside a group layer, using ArcGIS Pro SDK best practices.
-        /// </summary>
+
         public void CreateGraphicsLayer()
     {
       // cref: ArcGIS.Desktop.Mapping.GraphicsLayerCreationParams
