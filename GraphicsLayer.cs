@@ -13,10 +13,17 @@ using System.Threading.Tasks;
 
 namespace GraphicsLayerExamples
 {
-  class SnippetsGrphicsLayer : MapTool
+  class SnippetsGraphicsLayer : MapTool
   {
 
-        public void CreateGraphicsLayer()
+    /// <summary>
+    /// Creates a new graphics layer in the active 2D map.
+    /// </summary>
+    /// <remarks>This method adds a graphics layer to the active map if it is a 2D map. The layer is added to
+    /// the top of the table of contents by default,  but can also be added to the bottom or within a group layer. If
+    /// the active map is not a 2D map, the method returns without creating a layer.</remarks>
+    /// <param name="graphicLayerName">The name to assign to the new graphics layer.</param>
+    public void CreateGraphicsLayer(string graphicLayerName)
     {
       // cref: ArcGIS.Desktop.Mapping.GraphicsLayerCreationParams
       // cref: ArcGIS.Desktop.Mapping.LayerFactory.CreateLayer<T>(ArcGIS.Desktop.Mapping.LayerCreationParams,ArcGIS.Desktop.Mapping.ILayerContainerEdit)
@@ -27,7 +34,7 @@ namespace GraphicsLayerExamples
       if (map.MapType != MapType.Map)
         return;// not 2D
 
-      var gl_param = new GraphicsLayerCreationParams { Name = "Graphics Layer" };
+      var gl_param = new GraphicsLayerCreationParams { Name = graphicLayerName };
       QueuedTask.Run(() =>
       {
         //By default will be added to the top of the TOC

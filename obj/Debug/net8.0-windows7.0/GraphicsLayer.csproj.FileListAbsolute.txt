@@ -1,0 +1,13 @@
+D:\Repos\SelimDissem\GraphicsLayer\bin\Debug\net8.0-windows7.0\GraphicsLayer.deps.json
+D:\Repos\SelimDissem\GraphicsLayer\bin\Debug\net8.0-windows7.0\GraphicsLayer.dll
+D:\Repos\SelimDissem\GraphicsLayer\bin\Debug\net8.0-windows7.0\GraphicsLayer.pdb
+D:\Repos\SelimDissem\GraphicsLayer\obj\Debug\net8.0-windows7.0\GraphicsLayer.csproj.AssemblyReference.cache
+D:\Repos\SelimDissem\GraphicsLayer\obj\Debug\net8.0-windows7.0\GraphicsLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repos\SelimDissem\GraphicsLayer\obj\Debug\net8.0-windows7.0\GraphicsLayer.AssemblyInfoInputs.cache
+D:\Repos\SelimDissem\GraphicsLayer\obj\Debug\net8.0-windows7.0\GraphicsLayer.AssemblyInfo.cs
+D:\Repos\SelimDissem\GraphicsLayer\obj\Debug\net8.0-windows7.0\GraphicsLayer.csproj.CoreCompileInputs.cache
+D:\Repos\SelimDissem\GraphicsLayer\obj\Debug\net8.0-windows7.0\GraphicsLayer.sourcelink.json
+D:\Repos\SelimDissem\GraphicsLayer\obj\Debug\net8.0-windows7.0\GraphicsLayer.dll
+D:\Repos\SelimDissem\GraphicsLayer\obj\Debug\net8.0-windows7.0\refint\GraphicsLayer.dll
+D:\Repos\SelimDissem\GraphicsLayer\obj\Debug\net8.0-windows7.0\GraphicsLayer.pdb
+D:\Repos\SelimDissem\GraphicsLayer\obj\Debug\net8.0-windows7.0\ref\GraphicsLayer.dll
