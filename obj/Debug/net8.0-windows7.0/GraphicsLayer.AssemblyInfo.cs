@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GraphicsLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c256dea3dc6a17c80001120c404ad676328f40c5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fdeab8608f5e91bf980ec9585fa584a46ed3830f")]
 [assembly: System.Reflection.AssemblyProductAttribute("GraphicsLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GraphicsLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

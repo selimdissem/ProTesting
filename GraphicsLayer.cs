@@ -15,7 +15,11 @@ namespace GraphicsLayerExamples
 {
   class SnippetsGraphicsLayer : MapTool
   {
-
+    // cref: ArcGIS.Desktop.Mapping.GraphicsLayerCreationParams
+    // cref: ArcGIS.Desktop.Mapping.LayerFactory.CreateLayer<T>(ArcGIS.Desktop.Mapping.LayerCreationParams,ArcGIS.Desktop.Mapping.ILayerContainerEdit)
+    // cref: ArcGIS.Desktop.Mapping.LayerFactory
+    // cref: ArcGIS.Desktop.Mapping.LayerFactory.CreateGroupLayer(ArcGIS.Desktop.Mapping.ILayerContainerEdit, System.Int32, System.String)
+    #region Create GraphicsLayer
     /// <summary>
     /// Creates a new graphics layer in the active 2D map.
     /// </summary>
@@ -23,19 +27,14 @@ namespace GraphicsLayerExamples
     /// the top of the table of contents by default,  but can also be added to the bottom or within a group layer. If
     /// the active map is not a 2D map, the method returns without creating a layer.</remarks>
     /// <param name="graphicLayerName">The name to assign to the new graphics layer.</param>
-    public void CreateGraphicsLayer(string graphicLayerName)
+    /// <param name="map"> The map to which the graphics layer will be added.</param>
+    public static async Task CreateGraphicsLayerAsync(string graphicLayerName, Map map)
     {
-      // cref: ArcGIS.Desktop.Mapping.GraphicsLayerCreationParams
-      // cref: ArcGIS.Desktop.Mapping.LayerFactory.CreateLayer<T>(ArcGIS.Desktop.Mapping.LayerCreationParams,ArcGIS.Desktop.Mapping.ILayerContainerEdit)
-      // cref: ArcGIS.Desktop.Mapping.LayerFactory
-      // cref: ArcGIS.Desktop.Mapping.LayerFactory.CreateGroupLayer(ArcGIS.Desktop.Mapping.ILayerContainerEdit, System.Int32, System.String)
-      #region Create GraphicsLayer
-      var map = MapView.Active.Map;
-      if (map.MapType != MapType.Map)
+      if (map?.MapType != MapType.Map)
         return;// not 2D
 
       var gl_param = new GraphicsLayerCreationParams { Name = graphicLayerName };
-      QueuedTask.Run(() =>
+      await QueuedTask.Run(() =>
       {
         //By default will be added to the top of the TOC
         var graphicsLayer = LayerFactory.Instance.CreateLayer<ArcGIS.Desktop.Mapping.GraphicsLayer>(gl_param, map);
@@ -54,7 +53,7 @@ namespace GraphicsLayerExamples
         // or use the specific CreateGroupLayer method
         LayerFactory.Instance.CreateGroupLayer(map, -1, "Graphics Layer");
       });
-      #endregion
     }
+    #endregion
   }
 }
