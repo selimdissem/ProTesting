@@ -72,5 +72,5 @@
       <HintPath>C:\Program Files\ArcGIS\Pro\bin\Extensions\DataReviewer\ArcGIS.Desktop.DataReviewer.dll</HintPath>
       <Private>False</Private>
     </Reference>
-  </ItemGroup> 
+  </ItemGroup>
 </Project>
